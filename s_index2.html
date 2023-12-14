@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s_02 Milton glaser</title>
+    <meta property="og:url" content="https://seoungyook.github.io/Web_milton/s_index2.html">
+    <meta property="og:title" content="2023년 유한대학교 시각디자인과">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/kakaobanner.png">
+    <meta property="og:description" content="2023년 유한대학교 시각디자인과">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">  
+    <script type="text/javascript"> var UserAgent = navigator.userAgent; if (UserAgent.match
+        (/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) 
+        != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "mt2_index.html"; }
+        </script>
+</head>
+<body>
+
+    <div class="s_02wrap1"><div class="s_02wrap1block">INTERVIEW</div></div>
+    
+    <div class="menu">
+        <div class="line1"></div>
+        
+       
+            <div class="mwrap">
+              
+                <div class="logo1"><a href="index.html"><img src="img/logo1.png" alt=""></a></div>
+                
+             <div class="mbt1"><a href="s_index1.html">Introduce</a></div>
+             <div class="mbt1"><a href="s_index2.html">Interviews</a></div>
+             <div class="mbt1"><a href="s_index3.html">Works</a></div>
+             <div class="mbt1"><a href="s_index4.html">Philosophy</a></div>
+             <div class="search1"><a href="https://www.miltonglaser.com/store/c:posters/" target="_blank"><img src="img/see1.png" alt=""></a></div>
+            </div>
+    
+    <div class="s_02wrap2">
+    <div class="s_02wrap2block">
+
+    <div class="s_02story1">Conversation</div>
+    <div class="linewonzz"><img src="img/linewonnn.png" alt=""></div>
+    <div class="s_02wrap2-2"><img src="img/bg0404.png" alt=""></div>
+    <div class="s_02wrap2-2story" data-aos="zoom-in-up" data-aos-duration="3000"><img src="img/strory.png" alt=""></div>
+    <div class="linewonzzz"><img src="img/linewonnn.png"></div>
+    <div class="s_02image1"><img src="img/s_02_2.png" data-aos="zoom-in" data-aos-duration="1500"></div>
+    <div class="s_02image2"><img src="img/s_02_1.png" data-aos="fade-left"  data-aos-duration="2000"></div>
+    <div class="s_02image3" data-aos="fade-right"  data-aos-duration="2000"><img src="img/s_02-3.png"></div>
+    </div>
+    </div>
+
+    <div class="s_wrap4">
+        <div class="s_wrap4block">
+        
+        <a href="https://www.instagram.com/miltonglaserinc/" target="_blank"><div class="s_wrapicon">
+            <img src="img/insta.png"></a></div>
+
+
+        <a href="https:/twitter.com/MiltonGlaserInc" target="_blank">
+            <div class="s_wrapicon"><img src="img/twiter.png"></a></div>
+
+
+        <a href="https://www.facebook.com/MiltonGlaserInc/" target="_blank">
+            <div class="s_wrapicon"><img src="img/facebook.png"></a></div>
+     
+              <div class="mbt2mom">
+              <div class="mbt2"><a href="s_index1.html">Introduce</a></div> 
+              <div class="mbt2"><a href="s_index2.html">Interviews</a></div>
+              <div class="mbt2"><a href="s_index3.html">Works</a></div>
+              <div class="mbt2"><a href="s_index4.html">Philosophy</a></div>
+     
+              <div class="gotop" id="goTop"><img src="img/gotop.png" alt="img/see1.png" class="gotop"></div>
+     </div>
+     </div>
+           
+
+
+
+
+
+
+    
+</body>
+<script>
+    AOS.init();
+  </script>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var goTopButton = document.getElementById('goTop');
+    
+        goTopButton.addEventListener('click', function () {
+            // 문서를 부드럽게 상단으로 스크롤
+            scrollToTop(1000); // 1000은 부드러운 스크롤에 걸리는 시간(ms)을 나타냅니다.
+        });
+    
+        function scrollToTop(duration) {
+            var start = window.pageYOffset;
+            var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+    
+            function scrollStep(timestamp) {
+                var currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+                var elapsedTime = currentTime - startTime;
+    
+                window.scrollTo(0, easeInOutQuad(elapsedTime, start, -start, duration));
+    
+                if (elapsedTime < duration) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+    
+            function easeInOutQuad(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+    
+            requestAnimationFrame(scrollStep);
+        }
+    });
+    </script>
+</html>
